@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     "Get instant dental advice through voice calls with our AI assistant. Avaiable 24/7.",
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
