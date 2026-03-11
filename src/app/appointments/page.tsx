@@ -19,7 +19,7 @@ doctorImageUrl: string;
 reason: string;
 date: string;
 time: string;
-patientEmail?: string;
+patientEmail: string;
 };
 
 function AppointmentsPage() {
@@ -170,7 +170,7 @@ return (
           "EEEE, MMMM d, yyyy"
         ),
         appointmentTime: bookedAppointment.time,
-        userEmail: bookedAppointment.patientEmail,
+        userEmail: bookedAppointment.patientEmail ?? "",
       }}
     />
   )}
