@@ -1,33 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🦷 Dentwise – AI-Powered Dental Management SaaS
+Dentwise is a modern, full-stack solution designed to revolutionize dental clinic workflows. By integrating Vapi AI, the platform offers a voice-activated assistant that handles patient assessments and scheduling, bridging the gap between traditional healthcare and cutting-edge automation.
+Live Demo | Report Bug
 
-## Getting Started
+🚀 Key Features
+1. 🎙️ AI Voice Assessment: Integrated Vapi AI to provide a natural language voice interface for preliminary patient diagnosis and appointment inquiries.
+2. 📅 Smart Scheduling: A seamless booking system that syncs patient requests directly with the clinic’s availability.
+3. 🔐 Secure Authentication: Implemented Clerk for robust, HIPAA-aligned user management and role-based access control.
+4. 📊 Clinical Dashboard: A centralized hub for practitioners to manage patient records, treatment history, and digital invoices.
+5. 📱 Responsive Design: Built with Tailwind CSS to ensure a premium experience across desktops, tablets, and mobile devices.
 
-First, run the development server:
+🛠️ Tech Stack
+Layer        Technology
+Frontend     React.js, Tailwind CSS, Lucide Icons
+Backend      Node.js, Express.js
+Database     MongoDB (Mongoose)
+AI/Voice     Vapi AI
+Auth         Clerk
+Deployment   Render
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+📦 Installation & Setup
+1. Clone the repository
+    Bash
+    git clone https://github.com/yourusername/dentwise.gitcd dentwise
+2. Install dependencies:Bash# Install backend deps
+      npm install
+    # Install frontend deps
+    cd client && npm install
+3. Environment Variables:
+   Create a .env file in the root directory and add your credentials:
+   Code snippetPORT=5000
+   MONGO_URI=your_mongodb_uri
+   VAPI_API_KEY=your_vapi_key
+   CLERK_PUBLISHABLE_KEY=your_clerk_key
+4. Run the application:
+   Bash
+   npm run dev
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   
+🛡️ Security & PrivacyDentwise is built with data integrity in mind. By utilizing Clerk for session management and sandboxed environments for data processing, the platform ensures that sensitive patient information remains protected and compliant with modern web standards.
 
 ## Deploy on Vercel
 
